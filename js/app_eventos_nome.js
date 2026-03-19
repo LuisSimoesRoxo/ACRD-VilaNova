@@ -1,4 +1,4 @@
-App.registerSeed('eventos_nome.json', [{"id": "e1", "nome": "ACRDVN", "data_evento": "2026-01-01", "tipo_evento": "Institucional", "estado": "Concluído", "ativo": true, "created_at": "2026-01-01T00:00:00", "created_by": "Sistema", "updated_at": "2026-01-01T00:00:00", "updated_by": "Sistema"}, {"id": "e2", "nome": "Dia da Mulher", "data_evento": "2026-02-12", "tipo_evento": "Recreativo", "estado": "Concluído", "ativo": true, "created_at": "2026-01-01T00:00:00", "created_by": "Sistema", "updated_at": "2026-01-01T00:00:00", "updated_by": "Sistema"}, {"id": "e3", "nome": "Tasquinhas 2026", "data_evento": "2026-08-15", "tipo_evento": "Bar", "estado": "Planeado", "ativo": true, "created_at": "2026-01-01T00:00:00", "created_by": "Sistema", "updated_at": "2026-01-01T00:00:00", "updated_by": "Sistema"}]);
+App.registerSeed('eventos_nome.json', []);
 document.addEventListener('DOMContentLoaded', () => {
   App.bindCrudPage({
     pageKey:'eventos_nome',
