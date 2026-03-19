@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACRD Vila Nova - Dados Bancários</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/css_dados_bancarios.css">
+</head>
+<body data-page="dados_bancarios">
+  <div id="app">
+    <header class="header">
+      <button class="menu-toggle" id="menuToggle" title="Mostrar / ocultar menu">☰</button>
+      <img src="assets/logo.png" alt="Logotipo ACRD" class="header-logo">
+      <div class="page-title">Dados Bancários</div>
+      <div class="header-grow"></div>
+      <input id="globalSearch" class="header-search" type="search" placeholder="Pesquisar">
+      <button id="openDataFolderBtn" class="tool-btn" title="Abrir pasta de dados">Dados</button>
+      <span id="dataFolderStatus" class="small-note">Dados: amostra</span>
+      <button class="theme-toggle" id="themeToggle" title="Tema claro / escuro">◐</button>
+      <select id="yearFilter" class="header-year"></select>
+    </header>
+    <aside class="sidebar" id="sidebar">
+      <iframe class="menu-frame" id="menuFrame" title="Menu" src="partials/menu.html?page=dados_bancarios"></iframe>
+    </aside>
+    <main class="main" id="main">
+      <div class="page-grid"><section class="card toolbar"><div class="card-body"><form id="newForm" onsubmit="return false;"><div class="form-grid"><div class="field"><label>Ano</label><input id="new_ano" type="number"></div><div class="field"><label>Data registo</label><input id="new_data_registo" type="date"></div><div class="field"><label>Banco (€)</label><input id="new_saldo_banco" type="number"></div><div class="field"><label>Data banco</label><input id="new_data_banco" type="date"></div><div class="field"><label>Caixa (€)</label><input id="new_saldo_caixa" type="number"></div><div class="field"><label>Data caixa</label><input id="new_data_caixa" type="date"></div></div></form><div class="actions-row"><button class="action-btn primary" id="saveNewBtn">Guardar</button><button class="action-btn" id="cancelNewBtn">Cancelar</button><button class="action-btn print" id="printPageBtn">Imprimir</button></div></div></section><section class="card table-wrap"><table class="data-table"><thead><tr><th data-key="ano">Ano</th><th data-key="data_registo">Data registo</th><th data-key="saldo_banco">Banco</th><th data-key="data_banco">Data banco</th><th data-key="saldo_caixa">Caixa</th><th data-key="data_caixa">Data caixa</th><th data-key="saldo_total">Saldo</th><th data-key="updated_by">Alterado por</th><th>Ações</th></tr></thead><tbody id="tableBody"></tbody></table><div class="empty" id="emptyState" hidden>Sem registos.</div></section><div class="drawer-backdrop" id="drawerBackdrop"></div><aside class="drawer" id="drawer"><div class="drawer-header"><strong>Editar registo</strong></div><div class="drawer-body"><div class="field"><label>Ano</label><input id="edit_ano" type="number"></div><div class="field"><label>Data registo</label><input id="edit_data_registo" type="date"></div><div class="field"><label>Banco (€)</label><input id="edit_saldo_banco" type="number"></div><div class="field"><label>Data banco</label><input id="edit_data_banco" type="date"></div><div class="field"><label>Caixa (€)</label><input id="edit_saldo_caixa" type="number"></div><div class="field"><label>Data caixa</label><input id="edit_data_caixa" type="date"></div></div><div class="drawer-footer"><button class="action-btn primary" id="saveEditBtn">Guardar</button><button class="action-btn" id="cancelEditBtn">Cancelar</button><button class="action-btn warn" id="deleteEditBtn">Eliminar</button></div></aside></div>
+    </main>
+    <footer class="footer">
+      <img src="assets/logo.png" alt="Logotipo ACRD" class="footer-logo">
+      <span id="footerYear">Ano: 2026</span>
+      <span id="footerDespesa">Despesa: 0,00 €</span>
+      <span id="footerReceita">Receita: 0,00 €</span>
+      <span id="footerSaldo">Saldo: 0,00 €</span>
+      <span id="footerBanco">Banco: 0,00 €</span>
+      <span id="footerCaixa">Caixa: 0,00 €</span>
+    </footer>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/app_dados_bancarios.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "mdf1",
+    "membro_id": "md-001",
+    "funcao": "Presidente",
+    "mandato": "2026-2028",
+    "data_inicio": "2026-01-01",
+    "data_fim": "2028-12-31",
+    "ativo": true
+  }
+]

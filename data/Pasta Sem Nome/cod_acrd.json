@@ -1,0 +1,218 @@
+[
+  {
+    "id": "c101",
+    "codigo": "101",
+    "descricao": "Electricidade",
+    "grupo": "Funcionamento",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 1
+  },
+  {
+    "id": "c102",
+    "codigo": "102",
+    "descricao": "Água",
+    "grupo": "Funcionamento",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 2
+  },
+  {
+    "id": "c103",
+    "codigo": "103",
+    "descricao": "Telefone e Internet, TV",
+    "grupo": "Funcionamento",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 3
+  },
+  {
+    "id": "c104",
+    "codigo": "104",
+    "descricao": "Seguros",
+    "grupo": "Funcionamento",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 4
+  },
+  {
+    "id": "c105",
+    "codigo": "105",
+    "descricao": "Combustíveis",
+    "grupo": "Funcionamento",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 5
+  },
+  {
+    "id": "c106",
+    "codigo": "106",
+    "descricao": "Consumíveis vários",
+    "grupo": "Funcionamento",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 6
+  },
+  {
+    "id": "c107",
+    "codigo": "107",
+    "descricao": "Gás / Carvão",
+    "grupo": "Funcionamento",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 7
+  },
+  {
+    "id": "c201",
+    "codigo": "201",
+    "descricao": "Obras Novas",
+    "grupo": "Património",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 8
+  },
+  {
+    "id": "c202",
+    "codigo": "202",
+    "descricao": "Obras Reparações",
+    "grupo": "Património",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 9
+  },
+  {
+    "id": "c203",
+    "codigo": "203",
+    "descricao": "Aquisição Equipamento",
+    "grupo": "Património",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 10
+  },
+  {
+    "id": "c204",
+    "codigo": "204",
+    "descricao": "Reparações Equipamento",
+    "grupo": "Património",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 11
+  },
+  {
+    "id": "c205",
+    "codigo": "205",
+    "descricao": "Manutenção / Limpeza",
+    "grupo": "Património",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 12
+  },
+  {
+    "id": "c301",
+    "codigo": "301",
+    "descricao": "Actividades Recreativas",
+    "grupo": "Atividades",
+    "tipo_base": "MISTO",
+    "ativo": true,
+    "ordem": 13
+  },
+  {
+    "id": "c302",
+    "codigo": "302",
+    "descricao": "Actividades Desportivas",
+    "grupo": "Atividades",
+    "tipo_base": "MISTO",
+    "ativo": true,
+    "ordem": 14
+  },
+  {
+    "id": "c303",
+    "codigo": "303",
+    "descricao": "Bar diário",
+    "grupo": "Atividades",
+    "tipo_base": "MISTO",
+    "ativo": true,
+    "ordem": 15
+  },
+  {
+    "id": "c304",
+    "codigo": "304",
+    "descricao": "Cedências de instalações",
+    "grupo": "Atividades",
+    "tipo_base": "MISTO",
+    "ativo": true,
+    "ordem": 16
+  },
+  {
+    "id": "c401",
+    "codigo": "401",
+    "descricao": "I.M.I.",
+    "grupo": "Impostos",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 17
+  },
+  {
+    "id": "c402",
+    "codigo": "402",
+    "descricao": "Licenças",
+    "grupo": "Impostos",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 18
+  },
+  {
+    "id": "c403",
+    "codigo": "403",
+    "descricao": "Multas, coimas e outras",
+    "grupo": "Impostos",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 19
+  },
+  {
+    "id": "c501",
+    "codigo": "501",
+    "descricao": "Institucionais",
+    "grupo": "Institucional",
+    "tipo_base": "MISTO",
+    "ativo": true,
+    "ordem": 20
+  },
+  {
+    "id": "c502",
+    "codigo": "502",
+    "descricao": "Particulares e outros",
+    "grupo": "Institucional",
+    "tipo_base": "RECEITA",
+    "ativo": true,
+    "ordem": 21
+  },
+  {
+    "id": "c601",
+    "codigo": "601",
+    "descricao": "Quotizações Socios",
+    "grupo": "Receitas",
+    "tipo_base": "RECEITA",
+    "ativo": true,
+    "ordem": 22
+  },
+  {
+    "id": "c701",
+    "codigo": "701",
+    "descricao": "Juros Bancários / Depósitos",
+    "grupo": "Financeiro",
+    "tipo_base": "RECEITA",
+    "ativo": true,
+    "ordem": 23
+  },
+  {
+    "id": "c702",
+    "codigo": "702",
+    "descricao": "Despesas Bancárias",
+    "grupo": "Financeiro",
+    "tipo_base": "DESPESA",
+    "ativo": true,
+    "ordem": 24
+  }
+]

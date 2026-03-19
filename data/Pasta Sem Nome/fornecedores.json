@@ -1,0 +1,44 @@
+[
+  {
+    "id": "f1",
+    "nome": "ACRD VILA NOVA",
+    "nif": "501303383",
+    "telefone": "N.A.",
+    "email": "vilanova.acrd@gmail.com",
+    "morada": "Rua da Escola, 34, 3450-348 Vila Nova, Mortágua",
+    "ativo": true,
+    "observacoes": "Entidade principal",
+    "created_at": "2026-01-01T00:00:00",
+    "created_by": "Sistema",
+    "updated_at": "2026-01-01T00:00:00",
+    "updated_by": "Sistema"
+  },
+  {
+    "id": "f2",
+    "nome": "EDP",
+    "nif": "N.A.",
+    "telefone": "N.A.",
+    "email": "N.A.",
+    "morada": "N.A.",
+    "ativo": true,
+    "observacoes": "Fornecedor utilidades",
+    "created_at": "2026-01-01T00:00:00",
+    "created_by": "Sistema",
+    "updated_at": "2026-01-01T00:00:00",
+    "updated_by": "Sistema"
+  },
+  {
+    "id": "f3",
+    "nome": "MEO",
+    "nif": "N.A.",
+    "telefone": "N.A.",
+    "email": "N.A.",
+    "morada": "N.A.",
+    "ativo": true,
+    "observacoes": "Telecomunicações",
+    "created_at": "2026-01-01T00:00:00",
+    "created_by": "Sistema",
+    "updated_at": "2026-01-01T00:00:00",
+    "updated_by": "Sistema"
+  }
+]

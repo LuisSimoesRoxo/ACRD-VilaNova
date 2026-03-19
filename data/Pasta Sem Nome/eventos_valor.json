@@ -1,0 +1,26 @@
+[
+  {
+    "id": "evv1",
+    "evento_id": "e2",
+    "preco_socio": 20.0,
+    "preco_nao_socio": 25.0,
+    "preco_menor": 10.0,
+    "preco_menor_pagante": 5.0,
+    "created_at": "2026-01-01T00:00:00",
+    "created_by": "Sistema",
+    "updated_at": "2026-01-01T00:00:00",
+    "updated_by": "Sistema"
+  },
+  {
+    "id": "evv2",
+    "evento_id": "e3",
+    "preco_socio": 0.0,
+    "preco_nao_socio": 0.0,
+    "preco_menor": 0.0,
+    "preco_menor_pagante": 0.0,
+    "created_at": "2026-01-01T00:00:00",
+    "created_by": "Sistema",
+    "updated_at": "2026-01-01T00:00:00",
+    "updated_by": "Sistema"
+  }
+]

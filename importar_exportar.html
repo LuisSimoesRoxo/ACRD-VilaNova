@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACRD Vila Nova - Importar / Exportar</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/css_importar_exportar.css">
+</head>
+<body data-page="importar_exportar">
+  <div id="app">
+    <header class="header">
+      <button class="menu-toggle" id="menuToggle" title="Mostrar / ocultar menu">☰</button>
+      <img src="assets/logo.png" alt="Logotipo ACRD" class="header-logo">
+      <div class="page-title">Importar / Exportar</div>
+      <div class="header-grow"></div>
+      <input id="globalSearch" class="header-search" type="search" placeholder="Pesquisar">
+      <button id="openDataFolderBtn" class="tool-btn" title="Abrir pasta de dados">Dados</button>
+      <span id="dataFolderStatus" class="small-note">Dados: amostra</span>
+      <button class="theme-toggle" id="themeToggle" title="Tema claro / escuro">◐</button>
+      <select id="yearFilter" class="header-year"></select>
+    </header>
+    <aside class="sidebar" id="sidebar">
+      <iframe class="menu-frame" id="menuFrame" title="Menu" src="partials/menu.html?page=importar_exportar"></iframe>
+    </aside>
+    <main class="main" id="main">
+      <div class="page-grid"><section class="card"><div class="card-header"><strong>Pasta de dados</strong></div><div class="card-body"><p>Esta aplicação trabalha diretamente sobre os ficheiros JSON da pasta <span class="mono">data/</span>. Para editar dados reais, clica em <strong>Dados</strong> no cabeçalho e escolhe a pasta.</p><div class="actions-row"><button class="action-btn primary" id="openFolderInlineBtn">Abrir / mudar pasta de dados</button><button class="action-btn" id="verifyFilesBtn">Verificar ficheiros</button></div><div id="verifyResult" class="banner">Sem verificação executada.</div></div></section><section class="card"><div class="card-header"><strong>Ficheiros esperados</strong></div><div class="card-body"><ul id="filesList"></ul></div></section></div>
+    </main>
+    <footer class="footer">
+      <img src="assets/logo.png" alt="Logotipo ACRD" class="footer-logo">
+      <span id="footerYear">Ano: 2026</span>
+      <span id="footerDespesa">Despesa: 0,00 €</span>
+      <span id="footerReceita">Receita: 0,00 €</span>
+      <span id="footerSaldo">Saldo: 0,00 €</span>
+      <span id="footerBanco">Banco: 0,00 €</span>
+      <span id="footerCaixa">Caixa: 0,00 €</span>
+    </footer>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/app_importar_exportar.js"></script>
+</body>
+</html>

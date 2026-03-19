@@ -1,0 +1,29 @@
+[
+  {
+    "id": "mf1",
+    "membro_id": "md1",
+    "funcao": "Presidente",
+    "mandato": "2024-2026",
+    "data_inicio": "2024-01-01",
+    "data_fim": "2026-12-31",
+    "ativo": true
+  },
+  {
+    "id": "mf2",
+    "membro_id": "md2",
+    "funcao": "Secretário",
+    "mandato": "2024-2026",
+    "data_inicio": "2024-01-01",
+    "data_fim": "2026-12-31",
+    "ativo": true
+  },
+  {
+    "id": "mf3",
+    "membro_id": "md3",
+    "funcao": "Relator",
+    "mandato": "2024-2026",
+    "data_inicio": "2024-01-01",
+    "data_fim": "2026-12-31",
+    "ativo": true
+  }
+]

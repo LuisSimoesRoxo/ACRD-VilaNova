@@ -1,0 +1,17 @@
+[
+  {
+    "id": "md-001",
+    "data": "2026-01-05",
+    "nome": "Ângelo Custódio Ferreira Martins",
+    "cargo": "Presidente",
+    "n_nif": "123456789",
+    "n_cc_bi": "12345678",
+    "dt_validade_cc_bi": "2030-05-12",
+    "email": "angelo@example.com",
+    "ativo": true,
+    "created_at": "2026-01-05T10:00:00",
+    "created_by": "Roxo",
+    "updated_at": "2026-01-05T10:00:00",
+    "updated_by": "Roxo"
+  }
+]

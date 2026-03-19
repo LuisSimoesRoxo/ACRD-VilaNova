@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACRD Vila Nova - Eventos Valor</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/css_eventos_valor.css">
+</head>
+<body data-page="eventos_valor">
+  <div id="app">
+    <header class="header">
+      <button class="menu-toggle" id="menuToggle" title="Mostrar / ocultar menu">☰</button>
+      <img src="assets/logo.png" alt="Logotipo ACRD" class="header-logo">
+      <div class="page-title">Eventos Valor</div>
+      <div class="header-grow"></div>
+      <input id="globalSearch" class="header-search" type="search" placeholder="Pesquisar">
+      <button id="openDataFolderBtn" class="tool-btn" title="Abrir pasta de dados">Dados</button>
+      <span id="dataFolderStatus" class="small-note">Dados: amostra</span>
+      <button class="theme-toggle" id="themeToggle" title="Tema claro / escuro">◐</button>
+      <select id="yearFilter" class="header-year"></select>
+    </header>
+    <aside class="sidebar" id="sidebar">
+      <iframe class="menu-frame" id="menuFrame" title="Menu" src="partials/menu.html?page=eventos_valor"></iframe>
+    </aside>
+    <main class="main" id="main">
+      
+<div class="page-grid">
+  <section class="card"><div class="card-header"><strong>Evento de trabalho</strong></div><div class="card-body">
+    <div class="form-grid">
+      <div class="field"><label>Evento</label><select id="work_evento_id"></select></div>
+      <div class="field"><label>Preço Sócio</label><input id="work_preco_socio" type="number" step="0.01"></div>
+      <div class="field"><label>Preço Não Sócio</label><input id="work_preco_nao_socio" type="number" step="0.01"></div>
+      <div class="field"><label>Preço Menor</label><input id="work_preco_menor" type="number" step="0.01"></div>
+      <div class="field"><label>Preço Menor Pagante</label><input id="work_preco_menor_pagante" type="number" step="0.01"></div>
+    </div>
+    <div class="actions-row"><button class="action-btn primary" id="saveValoresBtn">Guardar valores</button></div>
+  </div></section>
+  <div class="two-col">
+    <section class="card"><div class="card-header"><strong>Participantes / inscrições</strong></div><div class="card-body">
+      <div class="form-grid">
+        <div class="field"><label>Nome</label><input id="part_nome" type="text"></div>
+        <div class="field"><label>Categoria</label><select id="part_categoria"></select></div>
+        <div class="field"><label>Pago</label><select id="part_pago"></select></div>
+        <div class="field"><label>Valor pago (€)</label><input id="part_valor" type="number" step="0.01"></div>
+        <div class="field"><label>Observações</label><input id="part_obs" type="text"></div>
+      </div>
+      <div class="actions-row"><button class="action-btn primary" id="addPartBtn">Adicionar participante</button></div>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Nome</th><th>Categoria</th><th>Pago</th><th>Valor</th><th>Ações</th></tr></thead><tbody id="partsBody"></tbody></table></div>
+    </div></section>
+    <section class="card"><div class="card-header"><strong>Caixa do evento</strong></div><div class="card-body">
+      <div class="form-grid">
+        <div class="field"><label>Data</label><input id="cash_data" type="date"></div>
+        <div class="field"><label>Tipo</label><select id="cash_tipo"></select></div>
+        <div class="field"><label>Descrição</label><input id="cash_desc" type="text"></div>
+        <div class="field"><label>Valor (€)</label><input id="cash_valor" type="number" step="0.01"></div>
+      </div>
+      <div class="actions-row"><button class="action-btn primary" id="addCashBtn">Adicionar movimento</button></div>
+      <div class="table-wrap"><table class="data-table"><thead><tr><th>Data</th><th>Tipo</th><th>Descrição</th><th>Valor</th><th>Ações</th></tr></thead><tbody id="cashBody"></tbody></table></div>
+    </div></section>
+  </div>
+  <section class="card"><div class="card-header"><strong>Resumo do evento</strong></div><div class="card-body"><div class="metrics"><div class="metric"><div class="metric-label">Inscritos</div><div class="metric-value" id="sumInscritos">0</div></div><div class="metric"><div class="metric-label">Pagantes</div><div class="metric-value" id="sumPagantes">0</div></div><div class="metric"><div class="metric-label">Recebido</div><div class="metric-value" id="sumRecebido">0,00 €</div></div><div class="metric"><div class="metric-label">Caixa líquida</div><div class="metric-value" id="sumCaixa">0,00 €</div></div></div></div></section>
+</div>
+
+    </main>
+    <footer class="footer">
+      <img src="assets/logo.png" alt="Logotipo ACRD" class="footer-logo">
+      <span id="footerYear">Ano: 2026</span>
+      <span id="footerDespesa">Despesa: 0,00 €</span>
+      <span id="footerReceita">Receita: 0,00 €</span>
+      <span id="footerSaldo">Saldo: 0,00 €</span>
+      <span id="footerBanco">Banco: 0,00 €</span>
+      <span id="footerCaixa">Caixa: 0,00 €</span>
+    </footer>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/app_eventos_valor.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "db-2023",
+    "ano": "2023",
+    "data_registo": "2023-12-31",
+    "saldo_banco": 21062.24,
+    "data_banco": "2023-12-31",
+    "saldo_caixa": 1830.0,
+    "data_caixa": "2023-12-31",
+    "saldo_total": 22892.24,
+    "created_at": "N.A.",
+    "created_by": "N.A.",
+    "updated_at": "N.A.",
+    "updated_by": "N.A."
+  },
+  {
+    "id": "db-2024",
+    "ano": "2024",
+    "data_registo": "2024-12-31",
+    "saldo_banco": 23456.83,
+    "data_banco": "2024-12-31",
+    "saldo_caixa": 878.75,
+    "data_caixa": "2024-12-31",
+    "saldo_total": 24335.58,
+    "created_at": "N.A.",
+    "created_by": "N.A.",
+    "updated_at": "N.A.",
+    "updated_by": "N.A."
+  },
+  {
+    "id": "db-2025",
+    "ano": "2025",
+    "data_registo": "2025-12-31",
+    "saldo_banco": 24629.6,
+    "data_banco": "2025-12-31",
+    "saldo_caixa": 1241.39,
+    "data_caixa": "2025-12-31",
+    "saldo_total": 25870.99,
+    "created_at": "N.A.",
+    "created_by": "N.A.",
+    "updated_at": "N.A.",
+    "updated_by": "N.A."
+  },
+  {
+    "id": "db-2026",
+    "ano": "2026",
+    "data_registo": "2026-01-01",
+    "saldo_banco": 30104.71,
+    "data_banco": "2026-01-01",
+    "saldo_caixa": 265.79,
+    "data_caixa": "2026-01-01",
+    "saldo_total": 30370.5,
+    "created_at": "N.A.",
+    "created_by": "N.A.",
+    "updated_at": "N.A.",
+    "updated_by": "N.A."
+  }
+]

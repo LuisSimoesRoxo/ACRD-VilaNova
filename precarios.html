@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACRD Vila Nova - Preçários</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/css_precarios.css">
+</head>
+<body data-page="precarios">
+  <div id="app">
+    <header class="header">
+      <button class="menu-toggle" id="menuToggle" title="Mostrar / ocultar menu">☰</button>
+      <img src="assets/logo.png" alt="Logotipo ACRD" class="header-logo">
+      <div class="page-title">Preçários</div>
+      <div class="header-grow"></div>
+      <input id="globalSearch" class="header-search" type="search" placeholder="Pesquisar">
+      <button id="openDataFolderBtn" class="tool-btn" title="Abrir pasta de dados">Dados</button>
+      <span id="dataFolderStatus" class="small-note">Dados: amostra</span>
+      <button class="theme-toggle" id="themeToggle" title="Tema claro / escuro">◐</button>
+      <select id="yearFilter" class="header-year"></select>
+    </header>
+    <aside class="sidebar" id="sidebar">
+      <iframe class="menu-frame" id="menuFrame" title="Menu" src="partials/menu.html?page=precarios"></iframe>
+    </aside>
+    <main class="main" id="main">
+      <div class="page-grid"><section class="card toolbar"><div class="card-body"><form id="newForm" onsubmit="return false;"><div class="form-grid"><div class="field"><label>Data</label><input id="new_data" type="date"></div><div class="field"><label>Produto</label><input id="new_nome_produto" type="text"></div><div class="field"><label>Categoria</label><input id="new_categoria" type="text"></div><div class="field"><label>Valor (€)</label><input id="new_valor" type="number"></div><div class="field"><label>Ativo</label><select id="new_ativo"></select></div><div class="field"><label>Ordem</label><input id="new_ordem" type="number"></div></div></form><div class="actions-row"><button class="action-btn primary" id="saveNewBtn">Guardar</button><button class="action-btn" id="cancelNewBtn">Cancelar</button><button class="action-btn print" id="printPageBtn">Imprimir</button></div></div></section><section class="card table-wrap"><table class="data-table"><thead><tr><th data-key="data">Data</th><th data-key="nome_produto">Produto</th><th data-key="categoria">Categoria</th><th data-key="valor">Valor</th><th data-key="ativo">Ativo</th><th data-key="updated_by">Alterado por</th><th>Ações</th></tr></thead><tbody id="tableBody"></tbody></table><div class="empty" id="emptyState" hidden>Sem registos.</div></section><div class="drawer-backdrop" id="drawerBackdrop"></div><aside class="drawer" id="drawer"><div class="drawer-header"><strong>Editar registo</strong></div><div class="drawer-body"><div class="field"><label>Data</label><input id="edit_data" type="date"></div><div class="field"><label>Produto</label><input id="edit_nome_produto" type="text"></div><div class="field"><label>Categoria</label><input id="edit_categoria" type="text"></div><div class="field"><label>Valor (€)</label><input id="edit_valor" type="number"></div><div class="field"><label>Ativo</label><select id="edit_ativo"></select></div><div class="field"><label>Ordem</label><input id="edit_ordem" type="number"></div></div><div class="drawer-footer"><button class="action-btn primary" id="saveEditBtn">Guardar</button><button class="action-btn" id="cancelEditBtn">Cancelar</button><button class="action-btn warn" id="deleteEditBtn">Eliminar</button></div></aside></div>
+    </main>
+    <footer class="footer">
+      <img src="assets/logo.png" alt="Logotipo ACRD" class="footer-logo">
+      <span id="footerYear">Ano: 2026</span>
+      <span id="footerDespesa">Despesa: 0,00 €</span>
+      <span id="footerReceita">Receita: 0,00 €</span>
+      <span id="footerSaldo">Saldo: 0,00 €</span>
+      <span id="footerBanco">Banco: 0,00 €</span>
+      <span id="footerCaixa">Caixa: 0,00 €</span>
+    </footer>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/app_precarios.js"></script>
+</body>
+</html>

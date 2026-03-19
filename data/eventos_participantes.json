@@ -1,0 +1,41 @@
+[
+  {
+    "id": "p1",
+    "evento_id": "e2",
+    "nome": "Ana Martins",
+    "categoria_participante": "Sócio",
+    "pago": true,
+    "valor_pago": 20,
+    "observacoes": "Pago em dinheiro",
+    "created_at": "2026-03-01T12:00:00",
+    "created_by": "Roxo",
+    "updated_at": "2026-03-01T12:00:00",
+    "updated_by": "Roxo"
+  },
+  {
+    "id": "p2",
+    "evento_id": "e2",
+    "nome": "Pedro Gomes",
+    "categoria_participante": "Não sócio",
+    "pago": true,
+    "valor_pago": 25,
+    "observacoes": "",
+    "created_at": "2026-03-01T12:05:00",
+    "created_by": "Roxo",
+    "updated_at": "2026-03-01T12:05:00",
+    "updated_by": "Roxo"
+  },
+  {
+    "id": "p3",
+    "evento_id": "e2",
+    "nome": "Marta Silva",
+    "categoria_participante": "Menor",
+    "pago": true,
+    "valor_pago": 12,
+    "observacoes": "",
+    "created_at": "2026-03-01T12:10:00",
+    "created_by": "Roxo",
+    "updated_at": "2026-03-01T12:10:00",
+    "updated_by": "Roxo"
+  }
+]

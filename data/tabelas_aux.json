@@ -1,0 +1,42 @@
+[
+  {
+    "id": "t1",
+    "data": "2026-01-01",
+    "nome": "texto_louvor",
+    "valor": "fosse aprovado o Relatório de Atividades e Contas e que fosse dado um voto de louvor pelos bons serviços desempenhados pela atual Direção.",
+    "created_at": "2026-01-01T10:00:00",
+    "created_by": "Roxo",
+    "updated_at": "2026-01-01T10:00:00",
+    "updated_by": "Roxo"
+  },
+  {
+    "id": "t2",
+    "data": "2026-01-01",
+    "nome": "assinatura_presidente",
+    "valor": "Ângelo Custódio Ferreira Martins",
+    "created_at": "2026-01-01T10:00:00",
+    "created_by": "Roxo",
+    "updated_at": "2026-01-01T10:00:00",
+    "updated_by": "Roxo"
+  },
+  {
+    "id": "t3",
+    "data": "2026-01-01",
+    "nome": "assinatura_secretario",
+    "valor": "António José Gomes de Almeida",
+    "created_at": "2026-01-01T10:00:00",
+    "created_by": "Roxo",
+    "updated_at": "2026-01-01T10:00:00",
+    "updated_by": "Roxo"
+  },
+  {
+    "id": "t4",
+    "data": "2026-01-01",
+    "nome": "assinatura_relator",
+    "valor": "Eurico Tomé Gomes",
+    "created_at": "2026-01-01T10:00:00",
+    "created_by": "Roxo",
+    "updated_at": "2026-01-01T10:00:00",
+    "updated_by": "Roxo"
+  }
+]

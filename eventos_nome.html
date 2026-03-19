@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACRD Vila Nova - Eventos Nome</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/css_eventos_nome.css">
+</head>
+<body data-page="eventos_nome">
+  <div id="app">
+    <header class="header">
+      <button class="menu-toggle" id="menuToggle" title="Mostrar / ocultar menu">☰</button>
+      <img src="assets/logo.png" alt="Logotipo ACRD" class="header-logo">
+      <div class="page-title">Eventos Nome</div>
+      <div class="header-grow"></div>
+      <input id="globalSearch" class="header-search" type="search" placeholder="Pesquisar">
+      <button id="openDataFolderBtn" class="tool-btn" title="Abrir pasta de dados">Dados</button>
+      <span id="dataFolderStatus" class="small-note">Dados: amostra</span>
+      <button class="theme-toggle" id="themeToggle" title="Tema claro / escuro">◐</button>
+      <select id="yearFilter" class="header-year"></select>
+    </header>
+    <aside class="sidebar" id="sidebar">
+      <iframe class="menu-frame" id="menuFrame" title="Menu" src="partials/menu.html?page=eventos_nome"></iframe>
+    </aside>
+    <main class="main" id="main">
+      <div class="page-grid"><section class="card toolbar"><div class="card-body"><form id="newForm" onsubmit="return false;"><div class="form-grid"><div class="field"><label>Nome do evento</label><input id="new_nome" type="text"></div><div class="field"><label>Data do evento</label><input id="new_data_evento" type="date"></div><div class="field"><label>Tipo de evento</label><input id="new_tipo_evento" type="text"></div><div class="field"><label>Estado</label><select id="new_estado"></select></div><div class="field"><label>Ativo</label><select id="new_ativo"></select></div></div></form><div class="actions-row"><button class="action-btn primary" id="saveNewBtn">Guardar</button><button class="action-btn" id="cancelNewBtn">Cancelar</button></div></div></section><section class="card table-wrap"><table class="data-table"><thead><tr><th data-key="nome">Evento</th><th data-key="data_evento">Data</th><th data-key="tipo_evento">Tipo</th><th data-key="estado">Estado</th><th data-key="ativo">Ativo</th><th data-key="updated_by">Alterado por</th><th>Ações</th></tr></thead><tbody id="tableBody"></tbody></table><div class="empty" id="emptyState" hidden>Sem registos.</div></section><div class="drawer-backdrop" id="drawerBackdrop"></div><aside class="drawer" id="drawer"><div class="drawer-header"><strong>Editar registo</strong></div><div class="drawer-body"><div class="field"><label>Nome do evento</label><input id="edit_nome" type="text"></div><div class="field"><label>Data do evento</label><input id="edit_data_evento" type="date"></div><div class="field"><label>Tipo de evento</label><input id="edit_tipo_evento" type="text"></div><div class="field"><label>Estado</label><select id="edit_estado"></select></div><div class="field"><label>Ativo</label><select id="edit_ativo"></select></div></div><div class="drawer-footer"><button class="action-btn primary" id="saveEditBtn">Guardar</button><button class="action-btn" id="cancelEditBtn">Cancelar</button><button class="action-btn warn" id="deleteEditBtn">Eliminar</button></div></aside></div>
+    </main>
+    <footer class="footer">
+      <img src="assets/logo.png" alt="Logotipo ACRD" class="footer-logo">
+      <span id="footerYear">Ano: 2026</span>
+      <span id="footerDespesa">Despesa: 0,00 €</span>
+      <span id="footerReceita">Receita: 0,00 €</span>
+      <span id="footerSaldo">Saldo: 0,00 €</span>
+      <span id="footerBanco">Banco: 0,00 €</span>
+      <span id="footerCaixa">Caixa: 0,00 €</span>
+    </footer>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/app_eventos_nome.js"></script>
+</body>
+</html>

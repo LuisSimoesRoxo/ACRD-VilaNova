@@ -1,0 +1,13 @@
+agora vai doer, vais gerar todo o projeto, com as alterações solicitadas até agora e mais as seguintes:
+- ficheiros js, devem vir em pasta propria por questões de organização
+- ficheiros css, devem vir em pasta propria por questões de organização
+- como te tinha pedido todas as páginas separa, inclusive o MENU (para poder alterar adicionar novos link sem ter de atuazlizar tudo)
+- cada página deve ter o seu proprio html para permitir edição e não vir tudo do js
+- manter este desgine está lindo
+- json estão gerados, não precisa de os regerar, tens os campos de cada um
+- layouts de impressão seguem a mesma logica, pasta propria, html proprio só chama valore necessarios
+- NOTA, as alterações tem de ser feitas no proprio json, não local, se quiser só levar dados é fácil ir á pasta e copiar e não andar à procura sabesse lá onde
+
+quanto mais compactado está mais dificil é de efetuar uma lateração comum a tudo
+
+Faz de resumo de tudo o que pedi amntes de avançar
