@@ -1,4 +1,5 @@
- App.registerSeed('dados_bancarios.json', []);
+App.registerSeed('tabelas_aux.json', []);
+App.registerSeed('dados_bancarios.json', []);
 App.registerSeed('faturacao.json', []);
 App.registerSeed('app_config.json', {"nome_associacao": "Associação Cultural Recreativa e Desportiva de Vila Nova", "nome_curto": "ACRD Vila Nova", "morada": "Rua da Escola, 34, 3450-348 Vila Nova, Mortágua", "contribuinte": "501303383", "email": "vilanova.acrd@gmail.com", "facebook": "www.facebook.com/acrdvilanova/", "logotipo": "assets/logo.png", "tema_predefinido": "light"});
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,6 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const banks = await App.readJson('dados_bancarios.json', App.seed('dados_bancarios.json'));
     const fat = await App.readJson('faturacao.json', App.seed('faturacao.json'));
     const cfg = await App.readJson('app_config.json', App.seed('app_config.json'));
+   
+const aux = await App.readJson('tabelas_aux.json', App.seed('tabelas_aux.json'));
+
+const presidente = aux.find(r => r.nome === 'assinatura_presidente')?.valor || '____________________________';
+const secretario = aux.find(r => r.nome === 'assinatura_secretario')?.valor || '____________________________';
+const relator = aux.find(r => r.nome === 'assinatura_relator')?.valor || '____________________________';
+   
     ui.setYearOptions([...new Set([...banks.map(r=>String(r.ano)), ...fat.map(r=>String(r.ano))].filter(Boolean))]);
     const year = ui.year === 'Todos' ? String(new Date().getFullYear()) : String(ui.year);
     const today = App.todayISO();
