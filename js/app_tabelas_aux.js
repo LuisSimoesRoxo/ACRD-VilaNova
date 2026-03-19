@@ -1,4 +1,4 @@
-App.registerSeed('tabelas_aux.json', [{"id": "ta1", "data": "2026-01-01", "nome": "mensagem_impressao", "valor": "Obrigado pela preferência!", "created_at": "2026-01-01T00:00:00", "created_by": "Sistema", "updated_at": "2026-01-01T00:00:00", "updated_by": "Sistema"}]);
+App.registerSeed('tabelas_aux.json', []);
 document.addEventListener('DOMContentLoaded', () => {
   App.bindCrudPage({
     pageKey:'tabelas_aux',
