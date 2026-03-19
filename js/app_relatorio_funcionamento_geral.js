@@ -1,4 +1,4 @@
-App.registerSeed('faturacao.json', [);
+App.registerSeed('faturacao.json', []);
 App.registerSeed('cod_acrd.json', []);
 document.addEventListener('DOMContentLoaded', () => {
   const ui = App.wireCommon('relatorio_funcionamento_geral', { searchPlaceholder:'Pesquisar código' });

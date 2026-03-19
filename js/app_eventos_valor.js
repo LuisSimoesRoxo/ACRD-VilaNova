@@ -1,6 +1,7 @@
 App.registerSeed('eventos_nome.json', []);
 App.registerSeed('eventos_valor.json', []);
 App.registerSeed('eventos_participantes.json', []);
+App.registerSeed('eventos_caixa.json', []);
 document.addEventListener('DOMContentLoaded', async () => {
   const ui = App.wireCommon('eventos_valor', { searchPlaceholder:'Pesquisar participante ou movimento de caixa' });
   let eventos = await App.readJson('eventos_nome.json', App.seed('eventos_nome.json'));

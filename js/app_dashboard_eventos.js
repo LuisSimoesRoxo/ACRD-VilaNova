@@ -1,5 +1,6 @@
 App.registerSeed('faturacao.json', []);
 App.registerSeed('eventos_nome.json', []);
+App.registerSeed('eventos_participantes.json', []);
 document.addEventListener('DOMContentLoaded', () => {
   const ui = App.wireCommon('dashboard_eventos', { searchPlaceholder:'Pesquisar evento' });
   let sortKey='nome', sortDir='asc';

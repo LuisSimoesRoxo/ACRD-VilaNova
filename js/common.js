@@ -74,13 +74,13 @@ const App = (() => {
     const centPart = `${numberToWordsPt(cents)} ${cents === 1 ? 'cêntimo' : 'cêntimos'}`;
     return cents ? `${euroPart} e ${centPart}` : euroPart;
   }
-  function dateToWordsPt(dateStr) {
-    const months = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
-    const days = ['domingo','segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado'];
-    const d = new Date(dateStr);
-    if (isNaN(d)) return 'N.A.';
-    return `${days[d.getDay()]}, ${d.getDate()} de ${months[d.getMonth()]} de ${numberToWordsPt(d.getFullYear())}`;
-  }
+function dateToWordsPt(dateStr) {
+  const months = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+  const d = new Date(dateStr);
+  if (isNaN(d)) return 'N.A.';
+
+  return `${numberToWordsPt(d.getDate())} dias do mês de ${months[d.getMonth()]} do ano de ${numberToWordsPt(d.getFullYear())}`;
+}
   function registerSeed(name, data) { seeds[name] = data; }
   function seed(name) { return structuredClone(seeds[name] || []); }
 
